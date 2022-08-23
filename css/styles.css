@@ -237,14 +237,6 @@ svg:not(:root) {
   display: none;
 }
 
-p {
-  font-size: calc(16px + 8 * ( (100vw - 420px) / 1020));
-}
-
-h1 {
-  font-size: calc(24px + 24 * ( (100vw - 420px) / 1020));
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
