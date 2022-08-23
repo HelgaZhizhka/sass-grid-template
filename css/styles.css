@@ -1,14 +1,17 @@
-html {
+:root {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-overflow-scrolling: touch;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-overflow-scrolling: auto;
   -webkit-touch-callout: none;
   overflow-y: auto;
 }
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+  font-smooth: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -232,6 +235,14 @@ svg:not(:root) {
 
 [hidden] {
   display: none;
+}
+
+p {
+  font-size: calc(16px + 8 * ( (100vw - 420px) / 1020));
+}
+
+h1 {
+  font-size: calc(24px + 24 * ( (100vw - 420px) / 1020));
 }
 
 .row {
