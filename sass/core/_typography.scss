@@ -10,11 +10,10 @@
   line-height: var(--baseline);
   line-height: calc(var(--baseline) * 1rem);
 }
-@media (min-width: 30rem) {
-  :root {
-    /* a value of 3 used here to exaggerate the changes so you can see it in the demo below */
-    --baseline: 1.6;
-  }
+@include create-mq($grid__bp-sm, 'min') {
+	:root {
+		--baseline: 1.6;
+	}
 }
 p {	
     font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.1905)), 1.5rem);
@@ -30,7 +29,6 @@ h4,
 h5, 
 h1 {
 	font-weight: 600;
-	margin-bottom: $baseline;
 }
 h1 {
 	/* @include fluid-type(font-size, $minScreen, $maxScreen, 2rem, 4rem); */

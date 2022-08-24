@@ -1,4 +1,4 @@
-$grid__bp-xs: 320;
+$grid__bp-xs: 428;
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
 $grid__bp-lg: 992;
@@ -6,30 +6,14 @@ $grid__bp-xl: 1200;
 $grid__bp-xxl: 1440;
 $grid__cols: 12;
 $gutter: 30;
-/* $scrollbar-width: 20; */
-
-$container-width-xxl: 1200;
+$container-width-xxl: 1350;
 
 $map-grid-props: (
     '': 0,
-    '-xs': $grid__bp-xs,
-    '-sm': $grid__bp-sm,
-    '-md': $grid__bp-md,
-    '-lg': $grid__bp-lg,
-    '-xl': $grid__bp-xl,
-    '-xxl': $grid__bp-xxl
+    '_xs': $grid__bp-xs,
+    '_sm': $grid__bp-sm,
+    '_md': $grid__bp-md,
+    '_lg': $grid__bp-lg,
+    '_xl': $grid__bp-xl,
+    '_xxl': $grid__bp-xxl
 );
-
-$baseline: 1.5rem;
-
-/* $minScreen: 20rem;
-$maxScreen: 80rem;
-$minFont: .875rem;
-$maxFont: 2rem;
-
-$h1: 4rem;
-$h2: 2.5rem;
-$h3: 2rem;
-$h4: 1.25rem;
-$h5: 1rem;
-$h6: .875rem; */
