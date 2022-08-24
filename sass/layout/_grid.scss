@@ -15,14 +15,11 @@
   margin: 0 auto;
   padding-right: calc($gutter / 2) * 1px;
 	padding-left: calc($gutter / 2) * 1px;
-  @each $modifier, $breakpoint in $map-grid-props {
-    @if($modifier == '-xxl' or $modifier == '-xl' or $modifier == '-lg') {
-      @include create-mq($breakpoint, 'min') {
-        max-width: ($breakpoint - $gutter - $scrollbar-width) * 1px;
-      }
-    }
+  @include create-mq($grid__bp-xxl, 'min') {
+    max-width: $container-width-xxl * 1px;
   }
 }
+
 @each $modifier, $breakpoint in $map-grid-props {
   @include create-col-classes($modifier, $grid__cols, $breakpoint)
 }

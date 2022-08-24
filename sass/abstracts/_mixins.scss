@@ -12,7 +12,7 @@
   @include create-mq($breakpoint, 'min') {
     @for $i from 1 through $grid-cols {
       .col#{$modifier}-#{$i} {
-        flex-basis: percentage(calc($i / $grid-cols));
+        flex: 0 0 percentage(calc($i / $grid-cols));
         max-width: percentage(calc($i / $grid-cols));
       }
     }
