@@ -13,18 +13,18 @@
   margin-right: calc($gutter / -2) * 1px;
   margin-left: calc($gutter / -2) * 1px;
 }
-.row > [class^="col-"] {
+.row > .col, .row > [class^="col-"] {
   width: 100%;
   min-height: 1px;
   padding-right: calc($gutter / 2) * 1px;
 	padding-left: calc($gutter / 2) * 1px;
 }
-.row_flush {
+.row-flush {
 	margin-left: 0;
 	margin-right: 0;
 
 	> .col,
-	> [class*="col-"] {
+	> [class^="col-"] {
 		padding-left: 0;
 		padding-right: 0;
 	}

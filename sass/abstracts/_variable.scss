@@ -10,10 +10,10 @@ $container-width-xxl: 1350;
 
 $map-grid-props: (
     '': 0,
-    '_xs': $grid__bp-xs,
-    '_sm': $grid__bp-sm,
-    '_md': $grid__bp-md,
-    '_lg': $grid__bp-lg,
-    '_xl': $grid__bp-xl,
-    '_xxl': $grid__bp-xxl
+    '-xs': $grid__bp-xs,
+    '-sm': $grid__bp-sm,
+    '-md': $grid__bp-md,
+    '-lg': $grid__bp-lg,
+    '-xl': $grid__bp-xl,
+    '-xxl': $grid__bp-xxl
 );
